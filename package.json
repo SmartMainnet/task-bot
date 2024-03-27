@@ -1,0 +1,38 @@
+{
+  "name": "task-bot",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "author": "SmartMainnet",
+  "license": "MIT",
+  "dependencies": {
+    "@grammyjs/conversations": "^1.2.0",
+    "@grammyjs/i18n": "^1.0.2",
+    "@grammyjs/ratelimiter": "^1.2.0",
+    "@grammyjs/storage-mongodb": "^2.4.2",
+    "@orbs-network/ton-access": "^2.3.3",
+    "@tonconnect/sdk": "^3.0.0",
+    "axios": "^1.6.7",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.21.1",
+    "mongoose": "^8.2.1",
+    "qrcode": "^1.5.3",
+    "ton": "^13.9.0",
+    "ton-core": "^0.53.0",
+    "ton-crypto": "^3.2.0",
+    "tonweb": "^0.0.64"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "@types/qrcode": "^1.5.5",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
